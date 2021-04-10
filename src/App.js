@@ -1,21 +1,18 @@
 import React from "react";
 import "./App.css";
 import Home from './components/Home'
-// import Employee from './components/Employee'
+import Hooks1 from './components/Hooks1'
 
 const App = () => {
     
 
   return (
-    <div className="app">
-      <Home/>
-         {/* <Employee FirstName="ruban" lastName="V"/>
-         <Employee FirstName="jack" lastName="V"/>
-         <Employee FirstName="cricket" lastName="Y"/>
-         <Employee FirstName="google" lastName="G"/>
-         <Employee FirstName="ruban" lastName="G"/> */}
-         
-         </div>
+  <div className="App">
+       <Home/>
+       <Hooks1/>
+
+       </div>
+  
   );
 };
 export default App;
