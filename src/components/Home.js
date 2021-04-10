@@ -1,11 +1,17 @@
-import  React from "react";
+import React,{ useState}from 'react'
 
-const Home = (props) => {
+const Home= ()=> {
+   const [count,setCounter] = useState(0);
+  //  const [moreStuff,setMoreStuff] = useState(...);
+  const setCount = ()=>{
+    setCounter(count+1);
+  }
   return (
     <div>
-        <h1>{props.title}</h1>
+   <button onClick={setCount}>Click me</button>  
+   <h1>{count}</h1>  
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
