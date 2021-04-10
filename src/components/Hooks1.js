@@ -9,9 +9,11 @@ const Hooks1=()=> {
     const buttonClicker=(e)=>{
         setCount(count+1)
     }
-    const click = useState("Hey ruban")
+    // const click = useState("Hey ruban")
+    const [click,setClick] = useState(0)
     return (
         <div>
+            <p>You clicked {click}times</p>
             <p>UserInfo:{JSON.stringify(userInfo)}</p>
         <button onClick={()=>setUserInfo({firstName:'ruban'})}>update the firstName</button>
         <button onClick={()=>setUserInfo(prevState=>({
@@ -20,6 +22,7 @@ const Hooks1=()=> {
         <button onClick={buttonClicker}>+</button>
         <h1>{count}</h1>
         <h1>{click}Welcome to home</h1>
+        <button onClick={()=>setClick(click+1)}>Click or increase</button>
         </div>
     )
 }
