@@ -1,12 +1,14 @@
 import React,{ useState} from 'react'
 
-const Hooks2=()=> {
-    const [click,setClick] = useState(0)
+export const Hooks2=()=> {
+   const [name,setName]= useState("name")
+     const changeInput = ()=>{
+         setName("uban")
+     }
     return (
         <div>
-            <p>{click}</p>
-            <p>The number of times you have clicked is{click%2===0? 'even':'odd'}</p>
-            <button onClick={()=>setClick(click=>click+1)}>addNumber</button>
+<h1>{name}</h1>
+<button onClick={changeInput}>Click</button>
         </div>
     )
 }
