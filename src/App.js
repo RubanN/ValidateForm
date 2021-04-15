@@ -6,7 +6,7 @@ import "./App.css";
 // import Hooks3 from './components/Hooks3'
 // import HooksArray from "./components/HooksArray";
 import HookUseEffect from "./components/HookUseEffect";
-
+import Usereducer from "./components/Usereducer"
 const App = () => {
   return (
     <div className="App">
@@ -16,6 +16,7 @@ const App = () => {
        <Hooks3/> */}
       {/* <HooksArray/> */}
       <HookUseEffect />
+      <Usereducer/>
     </div>
   );
 };
