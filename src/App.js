@@ -4,21 +4,19 @@ import "./App.css";
 // import Hooks1 from './components/Hooks1'
 // import Hooks2 from './components/Hooks2'
 // import Hooks3 from './components/Hooks3'
-import HooksArray from "./components/HooksArray";
-
+// import HooksArray from "./components/HooksArray";
+import HookUseEffect from "./components/HookUseEffect";
 
 const App = () => {
-    
-
   return (
-  <div className="App">
-       {/* <Home/>
+    <div className="App">
+      {/* <Home/>
        <Hooks1/>
        <Hooks2/>
        <Hooks3/> */}
-      <HooksArray/>
-       </div>
-  
+      {/* <HooksArray/> */}
+      <HookUseEffect />
+    </div>
   );
 };
 export default App;

@@ -3,7 +3,7 @@ import React,{useState} from 'react'
 export default   function HooksArray() {
     const [student,setStudentNames] = useState(["Ruban",'Virat',"kane willamSon"])
     const changeHooksArray = ()=>{
-        setStudentNames([...student,"thiyagu",'babu'])
+        setStudentNames(copy=>[...copy,"thiyagu",'babu'])
     }
     return (
         <div>
