@@ -5,8 +5,9 @@ import "./App.css";
 // import Hooks2 from './components/Hooks2'
 // import Hooks3 from './components/Hooks3'
 // import HooksArray from "./components/HooksArray";
-import HookUseEffect from "./components/HookUseEffect";
-import Usereducer from "./components/Usereducer"
+// import HookUseEffect from "./components/HookUseEffect";
+// import Usereducer from "./components/Usereducer"
+import index from './components/Redux-Demo/index'
 const App = () => {
   return (
     <div className="App">
@@ -15,8 +16,9 @@ const App = () => {
        <Hooks2/>
        <Hooks3/> */}
       {/* <HooksArray/> */}
-      <HookUseEffect />
-      <Usereducer/>
+      {/* <HookUseEffect />
+      <Usereducer/> */}
+      <index/>
     </div>
   );
 };
