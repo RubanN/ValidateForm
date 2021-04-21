@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import './index.css';
 import {createStore} from "redux"
+// import { App }  from './App'
+import { Provider } from 'react-redux'
+
 //Selector 
 const VAIVELU_COMEDY = "VAIDVELU_COMEDY";
 const GOUNDMANI_COMEDY = "GOUNDMANI_COMEDY";
@@ -29,7 +32,8 @@ store.dispatch(goundamaniComedyAction())
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}><App /></Provider>
+    
   </React.StrictMode>,
   document.getElementById('root')
 );
