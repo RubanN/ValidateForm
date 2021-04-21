@@ -8,7 +8,8 @@ import Hooks1 from './components/Hooks1'
 // import HookUseEffect from "./components/HookUseEffect";
 // import Usereducer from "./components/Usereducer"
 // import index from './components/Redux-Demo/index'
- import Hook1 from './components/Hook1'
+//  import Hook1 from './components/Hook1'
+ import Hook2 from './components/Hook2'
 
 const App = () => {
   return (
@@ -21,7 +22,8 @@ const App = () => {
       {/* <HookUseEffect />
       <Usereducer/> */}
       {/* <index/> */}
-      <Hook1/>
+      {/* <Hook1/> */}
+      <Hook2/>
     </div>
   );
 };
