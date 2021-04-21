@@ -9,7 +9,7 @@ import Hooks1 from './components/Hooks1'
 // import Usereducer from "./components/Usereducer"
 // import index from './components/Redux-Demo/index'
 //  import Hook1 from './components/Hook1'
- import Hook2 from './components/Hook2'
+//  import Hook2 from './components/Hook2'
  import Hook3 from './components/Hook3'
 
 
