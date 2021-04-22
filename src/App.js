@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import Useeffect2 from "./components/Useeffect2";
 // import Home from './components/Home'
 // import Hooks1 from './components/Hooks1'
 // import Hooks2 from './components/Hooks2'
@@ -14,7 +15,8 @@ import "./App.css";
 // import Hook4 from './components/Hook4'
 // import Hook5 from './components/Hook5'
 // import LoginForm from './components/LoginForm'
-import Useffect1 from "./components/Useffect1";
+// import Useffect1 from "./components/Useffect1";
+// import Useeffect2 from "./components/Useeffect2";
 
 
 const App = () => {
@@ -34,7 +36,8 @@ const App = () => {
       {/* <Hook4/>
       <Hook5/> */}
       {/* <LoginForm/> */}
-      <Useffect1/>
+      {/* <Useffect1/> */}
+      <Useeffect2/>
     </div>
   );
 };
