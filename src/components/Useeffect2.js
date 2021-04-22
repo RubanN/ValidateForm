@@ -1,19 +1,22 @@
-import React,{useEffect} from 'react'
+import React,{useState,useEffect} from 'react'
 
 function Useeffect2() {
- useEffect(() =>{
-     const url = 'http://Jsonplaceholder.typicode.com/posts';
-     fetch(url).then(res=>res.json())
-         .then(res=>console.log(res)
-     )
- },[])
-    return (
-        <div >
-            <h1 align="center">ReactApp</h1>
+const [resource,setResource] = useState('posts')
 
-            
+useEffect(() =>{
+    fetch(`https://jsonplaceholder.typicode.com/${resource}`)
+    .then(res=>res.json())
+    .then(json=> console.log(json))
+},[resource])
+    return (
+        <div>
+            <button onClick={()=>setResource('posts')}>Posts</button>
+            <button onClick={()=>setResource('users')}>users</button>
+            <button onClick={()=>setResource('comments')}>comments</button>
+            <h1>{resource}</h1>
         </div>
     )
 }
 
-export default Useeffect2
+export default Useeffect2;
+
