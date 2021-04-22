@@ -13,7 +13,8 @@ import "./App.css";
 //  import Hook3 from './components/Hook3'
 // import Hook4 from './components/Hook4'
 // import Hook5 from './components/Hook5'
-import LoginForm from './components/LoginForm'
+// import LoginForm from './components/LoginForm'
+import Useffect1 from "./components/Useffect1";
 
 
 const App = () => {
@@ -32,7 +33,8 @@ const App = () => {
       {/* <Hook3/> */}
       {/* <Hook4/>
       <Hook5/> */}
-      <LoginForm/>
+      {/* <LoginForm/> */}
+      <Useffect1/>
     </div>
   );
 };
